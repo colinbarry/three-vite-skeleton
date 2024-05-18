@@ -26,6 +26,7 @@ const updateViewport = () => {
   camera.updateProjectionMatrix();
 
   renderer.setSize(w, h);
+  renderer.setPixelRatio(Math.min(2, window.devicePixelRatio));
 };
 
 updateViewport();
